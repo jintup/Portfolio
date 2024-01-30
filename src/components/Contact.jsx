@@ -26,23 +26,25 @@ const Contact = () => {
       [name]: value,
     });
   };
-
+//
+//
+//
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
     emailjs
       .send(
-        'service_1v8t76b',
-        'template_h483imx',
+        'service_849eycf',
+        'template_dkxe4ck',
         {
           from_name: form.name,
-          to_name: "Darsana P G",
+          to_name: "Jintu Pradeep",
           from_email: form.email,
-          to_email: "darsanapg95@gmail.com",
+          to_email: "jintupradeep@gmail.com",
           message: form.message,
         },
-        'OnhE4ipO6H83_jEP9'
+        'fcOHoMRykj7MEyWp7'
       )
       .then(
         () => {
